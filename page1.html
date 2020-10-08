@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Mandy Kan's Portfolio</title>
@@ -87,32 +83,50 @@
 								<br/>
 								All three boosting model obtain a very similar results in ROC and Precision/Recall.
 								<br/>
-								<img class="imageall" src="images/income-eva1-1.png" />
-								<img class="imageall" src="images/income-eva1-2.png" />
-								<img class="imageall" src="images/income-eva2-1.png" />
-								<img class="imageall" src="images/income-eva2-2.png" />
+								<img class="imageall" src="images/income-eva1.png" />
+								<img class="imageall" src="images/income-eva2.png" />
 								<br/>
 								From the PCA evaluation curve, we may see that all components weights are quite weak. Reducing components may not benefit the model.
 								<br/>
 								<img class="imageall" src="images/income-eva3.png" />
 							</p>
+							<p><strong>Real-life Example: Prediction US President Income</strong>
+								<br/>
+								Obtained all Class 1 for all 6 models (income >50K), which is accurately predicted.
+								<br/>
+								<ul>
+									<li><strong>Donald Trump Data (Source: Wikipedia/Forbes):</strong></li>
+									<li>workclass: Federal­gov</li>
+									<li>marital-status: Married­civ­spouse</li>
+									<li>occupation: Exec­managerial</li>
+									<li>Sex: Male </li>
+									<li>Age: 74</li>
+									<li>education-num:13</li>
+									<li>Capital-gain: 434,900,000</li>
+									<li>Capital-loss: 47,400,000</li>
+									<li>Hours-per-week: 42</li>
+								</ul>
+								<br/>
+								
+
+
+							</p>
 						<p>Some more evaluation on over-sampling and coefficient reduction can be viewed in full code on github.</p>
 					</section>
+					
 				</div>
-
-
-
-				<footer class="major container medium">
-					<h3>Review code on Github</h3>
+				<footer class="container medium">
+					<h3>View code on Github</h3>
 					<ul class="actions special">
 						<li><a href="#" class="button">View code</a></li>
 					</ul>
 				</footer>
-
 			</div>
+
 
 		<!-- Footer -->
 			<div id="footer">
+				
 				<div class="container medium">
 					<ul class="actions special">
 						<li><a href="index.html" class="button">Home</a></li>
