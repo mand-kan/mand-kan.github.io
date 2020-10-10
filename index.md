@@ -29,10 +29,18 @@
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="page1.html" class="image icon solid fa-signal"><img src="images/income-distribution.png" alt="" /></a>
+						<a href="project1.html" class="image icon solid fa-signal"><img src="images/income-occu.png" width = 50% alt="" /></a>
 						<div class="content">
-							<h3>Income Prediction Project</h3>
+							<h3><a href="project1.html">Income Prediction Project</a></h3>
 							<p>Aims: To build a model for segmentation on customers. i.e. to identify high-value customers for better targeting
+							</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="project2.html" class="image icon solid fa-signal"><img src="images/home_job.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="project2.html">Job Market Trend Analysis</a></h3>
+							<p>Aims: To understand the recovery of job market under COVID-19 pandemic and investigate in the increasing IT talents demands.
 							</p>
 						</div>
 					</section>
