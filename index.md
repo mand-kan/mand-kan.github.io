@@ -44,13 +44,22 @@
 							</p>
 						</div>
 					</section>
+
+					<section class="feature left">
+						<a href="other.html" class="image icon solid fa-paper-plane"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="other.html">Other Python Projects</a></h3>
+							<li>A Flask Web App for titanic survival prediction.</li>
+							<li>Simple Tic-tac-toe</li>
+						</div>
+					</section>
 					
 				</div>
 
 				<footer class="major container medium">
 					<h3>Just want to check out code?</h3>
 					<ul class="actions special">
-						<li><a href="https://github.com/mand-kan" class="button">View code on Github</a></li>
+						<li><a href="https://github.com/mand-kan" class="button">View more on Github</a></li>
 					</ul>
 				</footer>
 				
