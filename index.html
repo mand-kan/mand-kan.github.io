@@ -79,10 +79,10 @@
           <h2>Technical Skills & Experience</h2>
           <div class="line-dec"></div>
           <span>
-            SQL, Tableau, Power BI
-            <br/>
-            Python (Pandas, Selenium, Matplotlib & Seaborn, Scikit-Learn, TensorFlow )
-            </span>
+            <li>SQL, Tableau, Power BI</li>
+            <li>Python (Pandas, Selenium, Matplotlib & Seaborn, Scikit-Learn, TensorFlow )</li>
+        </span>
+        </div>
         </div>
 
         <div class="row">
@@ -91,22 +91,32 @@
               <div class="first-service-icon service-icon"></div>
               <h4>Data Science Project experience</h4>
               <p>
-                Group Projects: Classification Model on Income Prediction, NLP sentiment analysis on twitter & Computer vision projeect for furniture recommendation.
+                <br/>
+                <b>Web Scraping</b>:
+                <br/>
+                Recruit HK, IKEA HK, IMDB.
                 <br/>
                 <br/>
-                Personal Projects: Classification Model on Seattle Car Accident.
+                <b>Machine Learning/ Deep Learning: </b>
+
+                <li>Classification Model on US Income Prediction</li>
+                <li>Classification Model on Seattle Car Accident </li>
+                <li>NLP sentiment analysis on twitter
+                <li>Computer vision projeect for furniture recommendation (Group)</li>
+
               </p>
+              </div>
             </div>
-          </div>
           <div class="col-md-6">
             <div class="service-item">
               <div class="second-service-icon service-icon"></div>
               <h4>Previous working experience</h4>
-              <p>
+                <p>
+                <br/>
                 Experience in Regional BI projects (Power BI, Tableau & Service Now) and e-commerce operation, understand well on business analytics, ETL and system development life cycle.
+                </p>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -116,46 +126,37 @@
         
       </section> -->
 
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Data Science Projects</h2>
-            <div class="line-dec"></div>
-            <span
-            ><p>Recent projects that have been done for study and research.</p></span>
+    <section class="section my-project" data-section="section2">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Data Science Projects</h2>
+          <div class="line-dec"></div>
+          <span><p>Recent projects that have been done for study and research.</p></span>
+                <div class="project-item">
+                  <h4><a href="https://github.com/mand-kan/Income-prediction-classification-model" class="button2">Income Prediction Classification Model</a></h4>
+              </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="service-item">
-                    <h4><a href="https://github.com/mand-kan/Income-prediction-classification-model" class="button">Income Prediction Classification Model</a></h4>
+                <div class="project-item">
+                  <h4><a href="https://github.com/mand-kan/Vegan-meat-NLP/tree/main/twitter_sentiment_LSTM_model" class="button2">NLP Sentiment Analysis on VeganMeat Market (From Twitter)</a></h4>
                 </div>
-              </div>
-                <div class="col-md-6">
-                  <div class="service-item">
-                    <h4><a href="https://github.com/mand-kan/Vegan-meat-NLP/tree/main/twitter_sentiment_LSTM_model" class="button">NLP Sentiment Analysis on Vegan Meat Market (From Twitter)</a></h4>
-                </div> 
-              </div>
+
+                <div class="project-item">
+                  <h4><a href="https://github.com/mand-kan/ObjectDetectionProject-FurnitureRecommender" class="button2">Image Classification and Recommendation on Furniture</a></h4>
+
             </div>
-            <div class="row"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="service-item">
-                    <h4><a href="#" class="button">Image Classification and Recommendation on Furniture</a></h4>
-                </div>
-              </div>
-                <div class="col-md-6">
-                  <div class="service-item">
-                    <h4><a href="https://github.com/mand-kan/python-projects-showcase" class="button">Other Python Projects: <br/>
-                      Web Scraping and Visualization
-                    </a></h4>
-                </div> 
-              </div>
-            </div>
-              </span>
+
+                <div class="project-item">
+                  <h4><a href="https://github.com/mand-kan/python-projects-showcase" class="button2">Other Python Projects: <br/>
+                    Web Scraping and Visualization
+                  </a></h4>
+
             </div>
           </div>
+            </span>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
     </div>
 
     <!-- Scripts -->

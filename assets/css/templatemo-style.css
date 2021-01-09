@@ -39,8 +39,8 @@ a:hover {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+p,li {
+    font-size: 15px;
     line-height: 24px;
     color: #fff;
 }
@@ -115,7 +115,7 @@ html {
     height: 70px;
     line-height: 70px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     color: #fff;
     width: 100%;
@@ -285,12 +285,12 @@ html {
 
 .section {
     color: #fff;
-    width: 55%;
-    right: 10%;
-    left: 35%;
+    width: 65%;
+    right: 5%;
+    left: 30%;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
 
@@ -300,7 +300,7 @@ html {
 }
 
 .section-heading h2 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     color: #fff;
 }
@@ -314,7 +314,7 @@ html {
 
 .section-heading span {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
     letter-spacing: 0.5px;
 }
@@ -327,7 +327,7 @@ html {
     padding: 10px 20px;
     background-color: #fff;
     color: #a43f49;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -341,10 +341,10 @@ html {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #fff;
     color: #a43f49;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -393,8 +393,8 @@ html {
 /* Services */
 
 .my-services .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .service-item {
@@ -412,17 +412,7 @@ html {
     transition: all 0.5s;
 }
 
-.service-item:hover {
-    background-color: rgba(250, 250, 250, 1);
-}
 
-.service-item:hover h4 {
-    color: #1e1e1e;
-}
-
-.service-item:hover p {
-    color: #4a4a4a;
-}
 
 .service-item .service-icon {
     width: 70px;
@@ -438,32 +428,89 @@ html {
     background-image: url(../images/first-white-icon.png);
 }
 
-.service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
-}
 
 .service-item .second-service-icon {
     background-image: url(../images/second-white-icon.png);
 }
 
-.service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
-}
+
 
 .service-item .third-service-icon {
     background-image: url(../images/third-white-icon.png);
 }
 
-.service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
-}
+
 
 .service-item .fourth-service-icon {
     background-image: url(../images/fourth-white-icon.png);
 }
 
-.service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
+
+
+/* Projects */
+
+.my-project/*  .col-md-11  */{
+	text-align:center;
+	display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.project-item {
+	
+	width: 100%;
+	margin: auto;
+	margin-bottom: 15px; 
+    padding: 15px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+.project-item h4 {
+    transition: all 0.5s;
+}
+
+.project-item p {
+    transition: all 0.5s;
+}
+
+/* 
+.project-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.project-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.project-item:hover p {
+    color: #4a4a4a;
+}
+ */
+
+
+.button2 {
+
+    display: block;
+	margin: auto;
+    width: 90%;
+    padding: 20px 20px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button2:hover {
+    outline: none;
+    background-color: #000000;
+    color: #fff;
 }
 
 
@@ -489,7 +536,7 @@ section.my-work .section-heading {
     display: inline-block;
     margin-right: 15px;
     padding-bottom: 3px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     border-bottom: 2px solid transparent;
     transform: ease-in-out 0.5s;
@@ -684,7 +731,7 @@ section.contact-me {
 
     .section {
         color: #fff;
-        width: 65%;
+        width: 70%;
         right: 5%;
         left: 30%;
     }
@@ -787,9 +834,9 @@ section.contact-me {
         display: inline-block;
     }
     .section {
-        width: 94%;
-        right: 3%;
-        left: 3%;
+        width: 98%;
+        right: 1%;
+        left: 1%;
     }
     .isotope-item {
         width: 94%;
