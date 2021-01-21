@@ -71,7 +71,10 @@
               Welcome to connect with me on linkedin to know more about me!</span>
               <div class="white-button">
                 <br/>
-                <a href="https://github.com/mand-kan">View Code on Github</a>
+                <div class="col-md-12">
+                <a href="https://github.com/mand-kan" style='margin:5px;'>View Code on Github</a>
+                <a href="/assets/KanKaManCV2020.pdf" style='margin:5px;' download>Download My CV</a>
+              </div>
               </div>
             
       <div class="container">
