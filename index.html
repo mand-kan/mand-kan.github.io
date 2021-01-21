@@ -73,7 +73,7 @@
                 <br/>
                 <div class="col-md-12">
                 <a href="https://github.com/mand-kan" style='margin:5px;'>View Code on Github</a>
-                <a href="/assets/KanKaManCV2020.pdf" style='margin:5px;' download>Download My CV</a>
+                <a href="/assets/KanKaManMandyCV2021.pdf" style='margin:5px;' download>Download My CV</a>
               </div>
               </div>
             
