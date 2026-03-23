@@ -1,225 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Mandy Kan's Portfolio</title>
-
-    <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mandy Kan | Data Specialist</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
+    
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #8b0000; /* Dark Red */
+            --accent-hover: #a50000;
+            --text-light: #636e72;
+            --bg-light: #fdfdfd;
+        }
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/author-image.png" alt="" /></a>
-            </div>
-            <div class="author-content">
-              <h4>Mandy Kan</h4>
-              <span>Data Analyst</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <!-- <li><a href="#section2">What I’m good at</a></li> -->
-                <li><a href="#section3">Data Science Projects</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://linkedin.com/in/mandkan"><i class="fa fa-linkedin"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>Copyright Mandy Kan 2020</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: var(--primary); 
+            line-height: 1.7; 
+            scroll-behavior: smooth;
+            background-color: #fff;
+        }
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >I am a technology enthusiast who enjoy problem solving and passionate about data science & business intelligence!
-              Welcome to connect with me on linkedin to know more about me!</span>
-              <div class="white-button">
-                <br/>
-                <div class="col-md-12">
-                <a href="https://github.com/mand-kan" style='margin:5px;'>View Code on Github</a>
-<!--                 <a href="/assets/KanKaManMandyCV2021.pdf" style='margin:5px;' download>Download My CV</a> -->
-              </div>
-              </div>
-            
-      <div class="container">
-        <div class="section-heading">
-          <h2>Technical Skills & Experience</h2>
-          <div class="line-dec"></div>
-          <span>
-            <li>SQL, Tableau, Power BI</li>
-            <li>Python (Pandas, Selenium, Matplotlib & Seaborn, Scikit-Learn, TensorFlow )</li>
-        </span>
-        </div>
-        </div>
+        /* Modern Top Nav */
+        .navbar { 
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .navbar-brand { font-weight: 700; color: var(--primary) !important; letter-spacing: -0.5px; }
+        .nav-link { color: var(--primary) !important; font-weight: 500; margin-left: 20px; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--accent) !important; }
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="first-service-icon service-icon"></div>
-              <h4>Data Science Project experience</h4>
-              <p>
-                <br/>
-                <b>Web Scraping</b>:
-                <br/>
-                Recruit HK, IKEA HK, IMDB.
-                <br/>
-                <br/>
-                <b>Machine Learning/ Deep Learning: </b>
-
-                <li>Classification Model on US Income Prediction</li>
-                <li>Classification Model on Seattle Car Accident </li>
-                <li>NLP sentiment analysis on twitter
-                <li>Computer vision projeect for furniture recommendation (Group)</li>
-
-              </p>
-              </div>
-            </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="second-service-icon service-icon"></div>
-              <h4>Previous working experience</h4>
-                <p>
-                <br/>
-                Experience in Regional BI projects (Power BI, Tableau & Service Now) and e-commerce operation, understand well on business analytics, ETL and system development life cycle.
-                </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--  
-
-      <section class="section my-services" data-section="section2">
+        /* Hero Section */
+        .hero-section { padding: 120px 0 70px; }
+        .hero-section h1 { font-weight: 800; font-size: 3.5rem; letter-spacing: -1.5px; margin-bottom: 10px; }
+        .hero-subtitle { font-size: 1.3rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
         
-      </section> -->
+        .section-title { font-weight: 700; font-size: 1.8rem; margin-bottom: 45px; position: relative; color: var(--primary); }
+        .section-title::after { content: ''; display: block; width: 40px; height: 3px; background: var(--accent); margin-top: 10px; }
+        .section-title.text-center::after { margin: 10px auto; }
+        
+        /* Experience Timeline Style */
+        .exp-container { border-left: 1px solid #eee; padding-left: 35px; margin-left: 10px; }
+        .exp-item { position: relative; margin-bottom: 55px; }
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 7px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px rgba(139, 0, 0, 0.1);
+        }
+        .exp-company { font-weight: 700; font-size: 1.25rem; color: var(--primary); }
+        .exp-role { font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+        .exp-date { font-size: 0.85rem; color: var(--text-light); font-weight: 500; margin-bottom: 15px; }
+        
+        /* Skills & Education Cards */
+        .card-flat { 
+            background: var(--bg-light); 
+            border: 1px solid #f0f0f0;
+            padding: 40px; 
+            border-radius: 12px; 
+            height: 100%; 
+            transition: 0.3s;
+        }
+        .card-flat:hover { border-color: #e0e0e0; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        
+        .skill-tag { 
+            display: inline-block; 
+            background: #fff; 
+            border: 1px solid #e8e8e8; 
+            padding: 6px 16px; 
+            border-radius: 8px; 
+            margin: 0 8px 12px 0; 
+            font-size: 0.9rem; 
+            font-weight: 600;
+            color: var(--primary);
+        }
 
-    <section class="section my-project" data-section="section2">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Data Science Projects</h2>
-          <div class="line-dec"></div>
-          <span><p>Recent projects that have been done for study and research.</p></span>
-                <div class="project-item">
-                  <h4><a href="https://github.com/mand-kan/Income-prediction-classification-model" class="button2">Income Prediction Classification Model</a></h4>
-              </div>
+        .cert-link { color: var(--accent); text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+        .cert-link:hover { color: var(--accent-hover); text-decoration: underline; }
 
-                <div class="project-item">
-                  <h4><a href="https://github.com/mand-kan/Vegan-meat-NLP/tree/main/twitter_sentiment_LSTM_model" class="button2">NLP Sentiment Analysis on VeganMeat Market (From Twitter)</a></h4>
+        footer { padding: 80px 0; background: #fafafa; border-top: 1px solid #eee; text-align: center; }
+        .social-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 48px; 
+            height: 48px; 
+            border-radius: 12px; 
+            background: var(--primary); 
+            color: #fff !important; 
+            margin: 0 8px;
+            transition: 0.3s;
+        }
+        .social-btn:hover { background: var(--accent); transform: translateY(-3px); }
+        
+        ul { list-style: none; padding-left: 0; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+        ul li::before { content: "•"; color: var(--accent); font-weight: bold; position: absolute; left: 0; }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">MANDY KAN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="about">
+        <div class="container text-center">
+            <p class="hero-subtitle">Data Specialist</p>
+            <h1>Kan Ka Man, Mandy</h1>
+            <div class="mt-4">
+                <a href="https://linkedin.com/in/mandkan" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/mand-kan" target="_blank" class="social-btn"><i class="fa fa-github"></i></a>
+            </div>
+            <p class="mt-5 mx-auto text-muted" style="max-width: 750px; font-size: 1.15rem;">
+                Technically-grounded specialist with a strong track record in BI development, analytics, and ETL. 
+                Dedicated to delivering scalable, data-driven solutions and currently pursuing an MSc in Data Science (Statistics) at the University of Leeds.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-5" id="experience">
+        <div class="container">
+            <h2 class="section-title text-center">Professional Experience</h2>
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <div class="exp-container">
+                        
+                        <div class="exp-item">
+                            <div class="exp-company">C&A Sourcing</div>
+                            <div class="exp-role">Sourcing Business Analyst (BI)</div>
+                            <div class="exp-date">Feb 2025 – Present</div>
+                            <ul>
+                                <li>Led regional market data analysis projects, delivering tailored dashboards to support strategic decisions and operational processes.</li>
+                                <li>Develop and maintain Python scripts to automate data extraction and processing tasks, streamlining reporting workflows.</li>
+                                <li>Create and maintain standard and ad-hoc reports; perform data analysis to monitor KPIs.</li>
+                                <li>Prepare user guides and training materials to support Power BI dashboard adoption.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-item">
+                            <div class="exp-company">Lalamove</div>
+                            <div class="exp-role">Senior BI Engineer</div>
+                            <div class="exp-date">Sept 2023 – July 2024</div>
+                            <ul>
+                                <li>Built and maintained centralized, scalable data pipelines for management and multi-unit operational reports.</li>
+                                <li>Collaborated with technology and data warehouse teams to extract and transform data from diverse sources.</li>
+                                <li>Optimized data pipelines through performance tuning to ensure reliable and efficient data delivery.</li>
+                                <li>Maintained analytics platforms, including internal data tools and Tableau.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-item">
+                            <div class="exp-company">Lalamove</div>
+                            <div class="exp-role">Senior Data Analyst / Data Analyst</div>
+                            <div class="exp-date">Feb 2021 – Aug 2023</div>
+                            <ul>
+                                <li>Managed cross-functional requirements from Product, Corporate Solutions, and Operations teams.</li>
+                                <li>Built and enhanced dashboards to provide actionable insights for business decision-making.</li>
+                                <li>Contributed to data science projects focused on product research and development.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-item">
+                            <div class="exp-company">Ricoh Asia Pacific Operations</div>
+                            <div class="exp-role">Business Analyst Associate (BI)</div>
+                            <div class="exp-date">Aug 2019 – Aug 2020</div>
+                            <ul>
+                                <li>Collected and transformed user requirements into project documentation and deliverables.</li>
+                                <li>Participated in regional Data Warehouse and BI projects (ServiceNow & Power BI) and maintained regional dashboards.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="certificates">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-flat">
+                        <h3 class="section-title" style="font-size: 1.5rem;">Education</h3>
+                        <div class="mb-4">
+                            <div class="fw-bold">MSc in Data Science (Statistics)</div>
+                            <div class="text-muted">University of Leeds | Expected June 2027</div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="fw-bold">BBA (Hons) Marketing Information Management</div>
+                            <div class="text-muted">City University of Hong Kong</div>
+                        </div>
+                        <div class="mb-0">
+                            <div class="fw-bold">Data Science & Machine Learning Bootcamp</div>
+                            <div class="text-muted">Xccelerate | 2020</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-item">
-                  <h4><a href="https://github.com/mand-kan/ObjectDetectionProject-FurnitureRecommender" class="button2">Image Classification and Recommendation on Furniture</a></h4>
-
+                <div class="col-md-6">
+                    <div class="card-flat">
+                        <h3 class="section-title" style="font-size: 1.5rem;">Certifications</h3>
+                        <div class="mb-3">
+                            <div class="fw-bold">Databricks Certified Data Engineer Associate</div>
+                            <a href="https://credentials.databricks.com/20be503a-32dc-4717-96a2-3d0090fda7a3" class="cert-link" target="_blank">View Credential <i class="fa fa-external-link small"></i></a>
+                        </div>
+                        <div class="mb-3">
+                            <div class="fw-bold">IBM Data Science Professional Certificate</div>
+                            <a href="https://coursera.org/share/e88c20bb0caa836d7b9e6b26bc552add" class="cert-link" target="_blank">View Credential <i class="fa fa-external-link small"></i></a>
+                        </div>
+                        <div class="mb-0">
+                            <div class="fw-bold">LCCI Accounting Levels 2 & 3</div>
+                            <div class="text-muted">Distinction & Credit</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-                <div class="project-item">
-                  <h4><a href="https://github.com/mand-kan/python-projects-showcase" class="button2">Other Python Projects: <br/>
-                    Web Scraping and Visualization
-                  </a></h4>
-
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card-flat text-center">
+                        <h3 class="section-title text-center" style="font-size: 1.5rem;">Technical Expertise</h3>
+                        <div class="mt-2">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">Power BI</div>
+                            <div class="skill-tag">Tableau</div>
+                            <div class="skill-tag">Databricks</div>
+                            <div class="skill-tag">ETL</div>
+                            <div class="skill-tag">Data Modeling</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-            </span>
-          </div>
         </div>
-      </div>
     </section>
-    </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
+    <footer>
+        <div class="container">
+            <h5 class="fw-bold mb-3">Connect with me</h5>
+            <div class="mb-4">
+                <a href="https://linkedin.com/in/mandkan" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/mand-kan" target="_blank" class="social-btn"><i class="fa fa-github"></i></a>
+            </div>
+            <p class="text-muted small">mandkan@gmail.com</p>
+            <p class="small text-muted mb-0 mt-4">&copy; 2026 Mandy Kan</p>
+        </div>
+    </footer>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
-  </body>
+</body>
 </html>
